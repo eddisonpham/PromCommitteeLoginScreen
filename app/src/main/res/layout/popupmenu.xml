@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabPopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:backgroundTint="@color/purple3"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/menu_open" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSongRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabPopUp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:visibility="gone"
+        app:backgroundTint="@color/pink"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/songrequest" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSeatingChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabSongRequest"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:visibility="gone"
+        app:backgroundTint="@color/pink"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/seatingchart" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabSeatingChart"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:visibility="gone"
+        app:backgroundTint="@color/pink"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/menu" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabPromSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabMenu"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:visibility="gone"
+        app:backgroundTint="@color/pink"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/promsummary" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMyProm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabPromSummary"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:visibility="gone"
+        app:backgroundTint="@color/pink"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/myprom" />
+
+    <TextView
+        android:id="@+id/txtMyProm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fabMyProm"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/fabMyProm"
+        android:enabled="true"
+        android:text="My Prom"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtPromSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fabPromSummary"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/fabMyProm"
+        android:enabled="true"
+        android:text="Prom Summary"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fabMenu"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/fabMyProm"
+        android:enabled="true"
+        android:text="Menu"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtSeatingChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fabSeatingChart"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/fabMyProm"
+        android:enabled="true"
+        android:text="Seating Chart"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtSongRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fabSongRequest"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/fabMyProm"
+        android:enabled="true"
+        android:text="Song Request"
+        android:textSize="20sp"
+        android:visibility="gone" />
+</RelativeLayout>
